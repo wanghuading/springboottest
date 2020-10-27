@@ -1,0 +1,15 @@
+模式注解：声明在应用中扮演“组件”角色的注解
+    @Component: spring容器托管的通用模式组件
+    装配方式
+        <context:component-scan>
+        ComponentScan
+@Enable模块装配: 具有相同领域的功能组件集合，组合形成独立的单元
+    注解驱动方式： 参考@EnableWebMvc,导入@Configuration注解的配置
+    接口编程方式： 参考@EnableCaching,通过ImportSelector选择，有更好扩展性
+条件装配
+    Profile方式
+    编程方式
+SpringBoot 自动装配
+    定义：基于约定大于配置原则，实现Spring组件自动装配的目的
+    装配：模式注解、@Enable模块、条件装配、工厂加载机制
+    实现：激活自动装配、实现自动装配、配置自动装配实现
